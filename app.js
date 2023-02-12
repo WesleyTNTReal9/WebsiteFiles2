@@ -25,6 +25,7 @@ function showImage(){
     console.log(img);
     pic.style.backgroundImage = img;
     Cookies.set('Image Played', '1')
+    Cookies.set('Weekly Image Played', '1', { expires: 7 })
 }
 
 setInterval(showImage,1000);

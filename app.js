@@ -24,6 +24,7 @@ function showImage(){
     var img = pics[a];
     console.log(img);
     pic.style.backgroundImage = img;
+    Cookies.set('Image Played', '1')
 }
 
 setInterval(showImage,1000);
